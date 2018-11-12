@@ -727,7 +727,7 @@ void FindMatches(const vector<LabelBBox>& all_loc_preds,
       vector<map<int, vector<float> > >* all_match_overlaps,
       vector<map<int, vector<int> > >* all_match_indices) {
   // all_match_overlaps->clear();
-  // all_match_indices->clear();
+     all_match_indices->clear();
   // Get parameters.
   CHECK(multibox_loss_param.has_num_classes()) << "Must provide num_classes.";
   const int num_classes = multibox_loss_param.num_classes();
